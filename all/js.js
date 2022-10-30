@@ -29,10 +29,13 @@ pat4.addEventListener('click', () => {
     a += 1;
     check();
 });
-let check = () => {
-    if (a === 4) {
+let change = () => {
         body.classList.remove('none');
         trick.style.display = 'none';
         window.top.document.title = "бар ма?";
+};
+let check = () => {
+    if (a === 4) { 
+        setTimeout(change(), 0.5);
     }
-}
+};
