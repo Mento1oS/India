@@ -36,6 +36,6 @@ let change = () => {
 };
 let check = () => {
     if (a === 4) { 
-        setTimeout(change(), 0.5);
+        setTimeout(change(), 500);
     }
 };
